@@ -10,7 +10,9 @@ defmodule AuctionWeb.Application do
       # Start the Telemetry supervisor
       AuctionWeb.Telemetry,
       # Start the Endpoint (http/https)
-      AuctionWeb.Endpoint
+      AuctionWeb.Endpoint,
+      # Start the PubSub system
+      {Phoenix.PubSub, name: AuctionWeb.PubSub}
       # Start a worker by calling: AuctionWeb.Worker.start_link(arg)
       # {AuctionWeb.Worker, arg}
     ]
