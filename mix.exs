@@ -16,6 +16,8 @@ defmodule AuctionUmbrella.MixProject do
   #
   # Run "mix help deps" for examples and options.
   defp deps do
-    []
+    [
+      {:excoveralls, "~> 0.5.7", only: :test},
+    ]
   end
 end
